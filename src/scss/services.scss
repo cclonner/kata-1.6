@@ -1,0 +1,103 @@
+.main {
+    &__services {
+        background-color: $color-bacground-grey;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px $color-title-border solid;
+    }
+}
+
+.services {
+    margin-top: 88px;
+    padding-top: 24px;
+    &__title {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            display: inline-block;
+            background: $color-decorate-green;
+            height: 40px;
+            width: 4px;
+            margin-right: 12px;
+        }
+    }
+    &__actions {
+        display: none;
+    }
+    &__btn-wraper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 173px;
+        margin-right: 30px;
+        &:hover {
+            color: $color-btn;
+        }
+    }
+    &__list {
+        margin-top: 32px;
+        display: flex;
+        overflow: scroll;
+        white-space: nowrap;
+        padding: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding-left: 16px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__item {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        color: $color-subtitle-text;
+        box-sizing: border-box;
+        height: 40px;
+        padding: 8px 16px;
+        &:hover:not(.services__item--active) {
+            color: $color-btn;
+        }
+        &--active {
+            background: $color-bacground-white;
+            border: 2px solid $color-item-active;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .services {
+        &__list {
+            padding-left: 34px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .main {
+        &__services {
+            margin-left: 320px;
+            padding-top: 0;
+        }
+    }
+    .services {
+        margin-top: 0;
+        // padding-top: 42px;
+        &__actions {
+            display: flex;
+            margin-left: auto;
+        }
+        &__list {
+            flex-wrap: wrap;
+            overflow: none;
+            white-space: wrap;
+            padding-left: 34px;
+        }
+    }
+}

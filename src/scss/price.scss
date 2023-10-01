@@ -1,0 +1,105 @@
+.prices-table {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .prices-table {
+        display: block;
+        text-align: start;
+        &__title {
+            padding-left: 32px;
+            box-sizing: border-box;
+            height: 56px;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+            margin-bottom: 16px;
+            color: $color-subtitle-text;
+            font-weight: 400;
+            background: linear-gradient(-270deg, $color-bacground-grey 0%, $color-bacground-white 98.61%);
+            border-top: 1px solid $color-title-border;
+            padding-top: 16px;
+        }
+        &__table {
+            width: 95%;
+            margin-left: 32px;
+            border-collapse: collapse;
+            background: $color-bacground-white;
+            border: none;
+            border-radius: 6px;
+        }
+        &__columns-title {
+            background: $color-bacground-grey;
+        }
+        &__column-title {
+            font-size: 14px;
+            line-height: 16px;
+            color: $color-subtitle-text;
+            mix-blend-mode: normal;
+            opacity: 0.72;
+            height: 65px;
+            &:nth-child(1) {
+                padding-left: 24px;
+                width: 40%;
+            }
+            &:nth-child(2) {
+                width: 25%;
+            }
+            &:nth-child(3) {
+                width: 20%;
+            }
+            &:nth-child(4) {
+                width: 15%;
+            }
+        }
+        &__row {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 65px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: $color-text;
+            &:not(:last-child) {
+                box-shadow: 0px 33px 0 -32px $color-card-border;
+            }
+        }
+        &__service {
+            padding-left: 24px;
+        }
+        &__gloss {
+            margin-left: 32px;
+            margin-top: 16px;
+            width: 420px;
+        }
+        &__text {
+            color: $color-text;
+        }
+        &__proposal {
+            cursor: pointer;
+            margin-top: 24px;
+            display: inline-block;
+            position: relative;
+            font-size: 16px;
+            color: $color-text;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            &:hover {
+                color: $color-btn
+            }
+        }
+        &__proposal::after {
+            content: "";
+            position: absolute;
+            background: url("../img/slider_btn/dropdown.svg") no-repeat;
+            width: 12px;
+            height: 12px;
+            transform: translate(10px, 3px);
+            -webkit-transform: translate(10px, 3px);
+            -moz-transform: translate(10px, 3px);
+            -ms-transform: translate(10px, 3px);
+            -o-transform: translate(10px, 3px);
+        }
+    }
+}

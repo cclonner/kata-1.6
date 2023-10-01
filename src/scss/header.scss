@@ -1,0 +1,204 @@
+@import './utils/env.scss';
+.header {
+    position: fixed;
+    top: 0px;
+    min-width: 320px;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    background-color: $color-bacground-white;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    height: 88px;
+    padding: 18px 16px;
+    &__button {
+        margin-right: 16px;
+        &--checkstatus {
+            margin-right: 0;
+        }
+    }
+    &__actions {
+        padding: 0;
+        display: flex;
+        margin: 0;
+        margin-left: auto;
+        align-items: center;
+    }
+    &__actions>li:nth-child(-n+3) {
+        display: none;
+    }
+    &__actions>li:nth-child(4)::before {
+        content: "";
+        display: inline-block;
+        box-sizing: border-box;
+        line-height: 0;
+        margin-right: 14px;
+        background-color: $color-card-border;
+        height: 32px;
+        width: 2px;
+        border-radius: 1px;
+        vertical-align: bottom;
+        margin-bottom: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 24px;
+        &__actions>li:nth-child(-n+3) {
+            display: block;
+        }
+        &__burger::after {
+            content: "";
+            display: inline-block;
+            height: 32px;
+            width: 2px;
+            margin-right: 20px;
+            vertical-align: bottom;
+            margin-bottom: 4px;
+            background-color: $color-card-border;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+}
+.header__button--burger {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/burger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    --color: $color-bacground-white
+    transition-property: background-color, transform; 
+    transition-duration: 200ms;
+}
+.header__button--burger:hover {
+    transform: scale(1.1);
+} 
+.header__button--call {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color:$color-btn;
+    background-image: url('/src/img/call.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    --color: $color-bacground-white;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  .header__button--chat {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/chat.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-white;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  .icon-button__button--img--order {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/checkstatus.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-whitewhite;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  .header__button--repair {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/repair.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-whitewhite;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  .header__button--profile {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/profile.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-white;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  .header__button--checkstatus {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/checkstatus.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-whitewhite;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  .services__btn-repair{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/repair.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-white;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  .services__btn-checkstatus{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-btn;
+    background-image: url('/src/img/checkstatus.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+    --color: $color-bacground-whitewhite;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }

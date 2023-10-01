@@ -1,0 +1,100 @@
+.prices {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    height: auto;
+    &__title {
+        margin-top: 16px;
+        margin-bottom: 4px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $color-subtitle-text;
+        font-weight: 400;
+    }
+    &__item {
+        position: relative;
+        background-color: $color-bacground-white;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 260px;
+        height: 200px;
+        padding: 16px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        margin-right: 16px;
+    }
+    &__service-title {
+        margin-top: 0;
+    }
+    &__service {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    &__price-title {}
+    &__price {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    &__time-title {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+    &__time {
+        margin: 0;
+        padding: 0;
+    }
+    &__btn {
+        position: absolute;
+        width: 119px;
+        height: 32px;
+        right: 16px;
+        bottom: 16px;
+    }
+    &__gloss {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__text {
+        color: $color-text
+    }
+    &__proposal {
+        cursor: pointer;
+        margin-top: 24px;
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        color: $color-text;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        &:hover {
+            color: $color-btn
+        }
+    }
+    &__proposal::after {
+        content: "";
+        position: absolute;
+        background: url("../img/slider_btn/dropdown.svg") no-repeat;
+        width: 12px;
+        height: 12px;
+        transform: translate(10px, 3px);
+        -webkit-transform: translate(10px, 3px);
+        -moz-transform: translate(10px, 3px);
+        -ms-transform: translate(10px, 3px);
+        -o-transform: translate(10px, 3px);
+    }
+}
+
+@media (min-width:768px) {
+    .repair {
+        &__services--price {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+ @import '../fonts/fonts.css';
+ @import '/src/scss/header.scss';
+ @import '/src/scss/button/_button_round.scss';
+ @import '/src/scss/button/_button_oval.scss';
+ @import '/src/scss/services.scss';
+ @import '/src/scss/about.scss';
+ @import '/src/scss/repair.scss';
+ @import '/src/scss/repair-brands.scss';
+ @import '/src/scss/repair-types.scss';
+ @import '/src/scss/repair-price.scss';
+ @import '/src/scss/footer.scss';
+ @import '/src/scss/menu.scss';
+ @import '/src/scss/price.scss';
+ @import '/src/scss/form.scss';
+ @import '/src/scss/form-feedback.scss';
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+ 
+ body {
+     font-family: "TT Lakes";
+     margin: 0;
+     padding: 0;
+     border: none;
+     min-width: 320px;
+     max-width: 1600px;
+     margin-left: auto;
+     margin-right: auto;
+     height: 100vh;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: inherit;
+     font-family: inherit;
+ }
+ 
+ li {
+     list-style-type: none;
+ }
+ 
+ .no-scroll {
+     overflow: hidden;
+ }
