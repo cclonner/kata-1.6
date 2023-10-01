@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://cclonner.github.io/kata-webcore-1.6",
+  "homepage": "https://cclonner.github.io/kata-1.6",
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
