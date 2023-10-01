@@ -1,3 +1,4 @@
+
 .burger {
     &__wrapper {
         position: absolute;
@@ -215,6 +216,7 @@
         }
         &__btn--close {
             display: none;
+             
         }
         &__footer {
             margin-top: auto;
@@ -222,16 +224,14 @@
     }
 }
 .burger__btn--search {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: $color-btn;
     background-image: url('/src/img/search-nobg.svg');
     background-repeat: no-repeat;
     background-position: center;   
-    --color: $color-bacground-white;
-    transition-property: background-color;
-    transition-duration: 200ms;
+
+}
+.burger__btn--close {
+    background-image: url('/src/img/burger_close.svg');
+    background-repeat: no-repeat;
+    background-position: center;   
+
 }

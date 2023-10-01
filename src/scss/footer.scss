@@ -1,5 +1,7 @@
 @import './utils/env.scss';
-
+@import './button/button_round';
+@import './button/button.scss';
+@import './button/button_oval';
 .footer {
   &__wrapper {
     border-top: 1px solid $color-title-border;
@@ -38,32 +40,20 @@
     }
   }
 
-  &__btn--msg,
-  &__btn--profile,
-  &__btn--call {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: #FF3E79;
+  &__btn--msg {
     background-image: url('/src/img/chat.svg');
     background-repeat: no-repeat;
-    background-position: center;
-    --color: white;
-    transition-property: background-color, transform;
-    transition-duration: 200ms;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+    background-position: center; 
   }
-
   &__btn--profile {
     background-image: url('/src/img/profile.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
   }
 
   &__btn--call {
     background-image: url('/src/img/call.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
   }
 }
